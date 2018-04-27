@@ -3,16 +3,23 @@
 <head>
 <style>
 
-h1 {color: powderblue;}
+h1 {color: blue;}
 body {background-color: orange;}
 	<title>First Heroku page!</title>
 }
 }
 }
 </style>
+<script>
+	function helloWorld(){
+		document.getElementById("first").innerHTML = "Hello World 2!";
+	}
+</script>
 <body>
 
 <h1>Hello World!</h1>
+
+<input id="first" onclick="helloWorld()">Enter...></input>
 
 </body>
 </html>
