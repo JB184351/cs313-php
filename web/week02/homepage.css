@@ -5,8 +5,7 @@ body {
 #About {
 	background-color: lightgrey;
     width: 300px;
-    border: 25px;
-    border-color: #2E4A62;
+    border: 25px green;
     padding: 25px;
     margin: 25px;
 }
