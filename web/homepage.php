@@ -24,7 +24,7 @@
 
     <?php
 
-    date_default_timezone_set("Idaho");
+    date_default_timezone_set('America/Idaho');
     echo "Current Date is " . date("Y/m/d") . "<br>";
     echo "Current Time is " . date("h:i:sa");
 
