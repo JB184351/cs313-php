@@ -1,4 +1,4 @@
-body {
+#Home {
 	background-color: #2E4A62;
 }
 
@@ -10,6 +10,6 @@ body {
     margin: 25px;
 }
 
-#Black {
-	background-color: black;
+#White {
+	background-color: white;
 }
