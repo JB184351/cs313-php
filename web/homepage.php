@@ -59,7 +59,7 @@
 
     </nav>
 
-    <p id="first" id="Text" onmouseover="helloWorld()">></p>
+    <p class="first" id="Text" onmouseover="helloWorld()">></p>
     
 </body>
 
