@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="About.html"
+                    <a href="week02/About.html"
                        class="nav-link">About</a>
                 </li>
                 <li class="nav-item">

@@ -1,3 +1,11 @@
 body {
 	background-color: #2E4A62;
 }
+
+div {
+	background-color: lightgrey;
+    width: 300px;
+    border: 25px #2E4A62;
+    padding: 25px;
+    margin: 25px;
+}
