@@ -24,13 +24,9 @@
 
     <?php
 
-    $timezone = date_default_timezone_get();
+    date_default_timezone_set('America/Boise');
     echo "Current Date is " . date("Y/m/d") . "<br>";
-    echo "Current Time is " . $timezone;
-
-    echo date("l") . ", ";
-    echo date('F d') . " ";
-    echo date("h:i:sa");
+    echo "Current Time is " . date("h:i:sa");
 
     ?>
 
