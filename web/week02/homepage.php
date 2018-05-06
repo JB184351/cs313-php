@@ -20,6 +20,13 @@
 </head>
 
 <body>
+
+    <?php
+
+
+
+    ?>
+
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a href="#" class="navbar-brand">Justin Bengtson</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
@@ -39,7 +46,7 @@
           Dropdown link
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Week 3</a>
+          <a class="dropdown-item" href="w">Week 3</a>
           <a class="dropdown-item" href="#">Week 4</a>
           <a class="dropdown-item" href="#">Week 5</a>
         </div>
