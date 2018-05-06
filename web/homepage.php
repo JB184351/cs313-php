@@ -28,6 +28,10 @@
     echo "Current Date is " . date("Y/m/d") . "<br>";
     echo "Current Time is " . $timezone;
 
+    echo date("l") . ", ";
+    echo date('F d') . " ";
+    echo date("h:i:sa");
+
     ?>
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
