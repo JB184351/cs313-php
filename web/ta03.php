@@ -4,7 +4,7 @@
 
 <h2>Team Activity 3</h2>
 
-<form action="/action_page.php">
+<form method="post">
   First name:<br>
   <input type="text" name="firstname" value="">
   <br>
