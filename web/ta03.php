@@ -23,12 +23,13 @@
   <input type="radio" name="Major" value="other"> Computer Engineering<br> 
 
  <?php
-  $FirstName = _$POST["firstname"];
-  $LastName =  _$POST["lastname"];
+  
+  $FirstName = $_POST["firstname"];
+  $LastName =  $_POST["lastname"];
 
-  $Email = _$POST["Email"];
+  $Email = $_POST["Email"];
 
-  $Major = _$POST["Major"];
+  $Major = $_POST["Major"];
 
   echo $FirstName . "<br>";
   echo $LastName . "<br>";
