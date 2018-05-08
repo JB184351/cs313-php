@@ -60,7 +60,7 @@
 
   if(!empty($_POST['continent'])){
 
-    foreach($_POST['continent']){
+    foreach($_POST['continent'] as $Continent){
 
       echo $Continent . "<br>";
     }
