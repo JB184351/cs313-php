@@ -36,24 +36,24 @@
   <input type="checkbox" name="continent[]" value="Antarctica">Antarctica<br>
 
 
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit"><br>
 
  <?php
   
-  $FirstName = $_POST["firstname"];
-  $LastName =  $_POST["lastname"];
+  $FirstName = htmlspecialchars($_POST["firstname"]);
+  $LastName =  htmlspecialchars($_POST["lastname"]);
 
-  $Email = $_POST["Email"];
+  $Email = htmlspecialchars($_POST["Email"]);
 
-  $Major = $_POST["Major"];
+  $Major = htmlspecialchars($_POST["Major"]);
 
 
-  $Comments = $_POST["Comments"];
-  $Continent = $_POST['continent'];
+  $Comments = htmlspecialchars($_POST["Comments"]);
+  $Continent = htmlspecialchars($_POST['continent']);
 
   echo $FirstName . "<br>";
   echo $LastName . "<br>";
-  echo $Email . "<br>";
+  echo "<a href='mailto: " . $Email . "?body=". $body . ">'" . "<br>";
   echo $Major . "<br>";
   echo $Comments . "<br>";
 
