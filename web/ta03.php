@@ -53,7 +53,7 @@
 
   echo $FirstName . "<br>";
   echo $LastName . "<br>";
-  echo "<a href='mailto: " . $Email . "?body=". $body . ">'" . "<br>";
+  echo "<a href='mailto: " . $Email . "<br>";
   echo $Major . "<br>";
   echo $Comments . "<br>";
 
