@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
+<title>Notakers Inc.</title>
+<script type="text/javascript" src="calc.js"></script>
 <body>
 
-<h1>Browse Items!</h1>
 
-<form action="first.php" name="form1" method="post" onsubmit="return checkForm('name', 'name1', 'cardNum', 'phone', 'box','product',)">
+<h1>Browse Digital Notetaking Items!</h1>
+<p href="cart.php">Shopping Cart></p>
+
+
+<form action="cart.php" name="form1" method="post" onsubmit="return checkForm('name', 'name1', 'cardNum', 'phone', 'box','product',)">
   <fieldset>
             <legend>
                 Products
@@ -35,24 +40,10 @@
 
 
 <?php
-	
 	session_start();
 
-	$count = "Session-count";
-
-	if(isset($_SESSION[$count])){
-
-	$_SESSION[$count]++;
-	}
-	else{
-	$_SESSION[$count] = 0;
-}
-
-$sessionCount = $_SESSION[$count];
-
+	$sessionCount = $_SESSION[$count];
 ?>
-
-You have visited the page: <?php echo $sessionCount; ?> times
 
 </body>
 </html>
