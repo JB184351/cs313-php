@@ -22,9 +22,11 @@
 	// against the database. Placeholders within this SQL string should
 	// begin with a colon (:), but should be plain literal identifiers,
 	// without any kind of PHP $ variable involved.
-	$query = "SELECT score.score FROM score INNER JOIN person
-    ON score.person_id = person.id WHERE person.name = :user_name";
+	//$query = "SELECT score.score FROM score INNER JOIN person
+    //ON score.person_id = person.id WHERE person.name = :user_name";
 	
+    $query = "SELECT score.score, person.name AS person FROM score INNER JOIN person ON score.person_id = person.id WHERE person.name = :user_name";
+
 	// You would then prepare a statement based on that query:
 	$stmt = $db->prepare($query);
 	
