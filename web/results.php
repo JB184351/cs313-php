@@ -58,7 +58,7 @@
  	  //$year = $movie["year"];
  	  //$rating = $movie["code"];
 
-  	  $person = $score["person"];
+  	  $person = $score["person_id"];
    	  $score1 = $score["score"];
     
    	 echo "<li>$person - $score1</li>";
