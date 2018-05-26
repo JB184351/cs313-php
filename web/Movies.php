@@ -25,9 +25,9 @@ catch (PDOException $ex)
 </head>
 <body>
     <h1>Movies</h1>
-
+<form action="Movies.php" method="post">
     <ul>
- <form action="Movies.php" method="post">
+ 
 <?php
 $user_rating = $_GET["rating"];
 $query = "SELECT m.title, m.year, r.code FROM movies m INNER JOIN ratings r ON m.rating_id = r.id WHERE r.code = :rating";
