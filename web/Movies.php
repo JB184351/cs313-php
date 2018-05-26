@@ -25,7 +25,7 @@ catch (PDOException $ex)
 </head>
 <body>
     <h1>Movies</h1>
-<form action="Movies.php" method="post">
+<form action="" method="post">
     <ul>
  
 <?php
