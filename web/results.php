@@ -24,7 +24,7 @@ foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $score)
     $person = $score["person"];
     $score1 = $score["score"];
     
-    echo "<li>$title ($year) - Rated $rating</li>";
+    echo "<li>$person - $score1</li>";
 }
 ?>
 </body>
