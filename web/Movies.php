@@ -1,4 +1,4 @@
-<form>
+<form action="Movies.php" method="post">
 <?php
 try
 {
