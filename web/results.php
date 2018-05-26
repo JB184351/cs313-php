@@ -9,11 +9,14 @@
 	$user_name = $_GET["person"];
 	echo "$user_name";
 
-	$query = "SELECT score FROM score WHERE 
-	person_id = (SELECT id FROM person WHERE name = '$user_name')";
-	$statement = $db->prepare($query);
-	$statement->bindValue(":score", $user_name, PDO::PARAM_STR);
-	$statement->execute();
+	$query = "SELECT score.score FROM score INNER JOIN person
+    ON score.person_id = person.id WHERE person.name = :name";
+    
+	$stmt = $db->prepare('SELECT * FROM score WHERE col = :placeholder');
+	$stmt->bindValue('placeholder', $user_name, PDO::PARAM_STR);
+	//$statement = $db->prepare($query);
+	//$statement->bindValue(":score", $user_name, PDO::PARAM_STR);
+	//$statement->execute();
 
 	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $score)
 	{
