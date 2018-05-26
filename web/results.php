@@ -10,7 +10,7 @@
 	echo "$user_name";
 
 $query = "SELECT score FROM score WHERE 
-person_id = (SELECT id FROM person WHERE name = 'user_name')";
+person_id = (SELECT id FROM person WHERE name = '$user_name')";
 $statement = $db->prepare($query);
 $statement->bindValue(":rating", $user_name, PDO::PARAM_STR);
 $statement->execute();
