@@ -8,12 +8,14 @@
 <?php
 	$user_name = $_GET["person"];
 	echo "$user_name";
+	echo "\n";
 
 	$query = "SELECT score.score FROM score INNER JOIN person
     ON score.person_id = person.id WHERE person.name = :$user_name";
     echo "$query";
 
 	$stmt = $db->prepare('SELECT * FROM score WHERE col = :placeholder');
+	echo "$stmt";
 	$stmt->bindValue('placeholder', $query, PDO::PARAM_STR);
 	//$statement = $db->prepare($query);
 	//$statement->bindValue(":score", $user_name, PDO::PARAM_STR);
