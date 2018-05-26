@@ -1,4 +1,4 @@
-
+<form>
 <?php
 try
 {
@@ -44,6 +44,6 @@ foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $movie)
 }
 ?>
     </ul>
-
+</form>
 </body>
 </html>
