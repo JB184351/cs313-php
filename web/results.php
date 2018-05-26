@@ -10,10 +10,10 @@
 	echo "$user_name";
 
 	$query = "SELECT score.score FROM score INNER JOIN person
-    ON score.person_id = person.id WHERE person.name = :name";
-    
+    ON score.person_id = person.id WHERE person.name = :user_name";
+
 	$stmt = $db->prepare('SELECT * FROM score WHERE col = :placeholder');
-	$stmt->bindValue('placeholder', $user_name, PDO::PARAM_STR);
+	$stmt->bindValue('placeholder', $query, PDO::PARAM_STR);
 	//$statement = $db->prepare($query);
 	//$statement->bindValue(":score", $user_name, PDO::PARAM_STR);
 	//$statement->execute();
