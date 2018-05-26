@@ -16,12 +16,12 @@
 
 	$stmt = $db->prepare('SELECT * FROM score WHERE col = :placeholder');
 	$stmt->bindValue('placeholder', $query, PDO::PARAM_STR);
-	echo "$stmt";
+	//echo "$stmt";
 	//$statement = $db->prepare($query);
 	//$statement->bindValue(":score", $user_name, PDO::PARAM_STR);
 	//$statement->execute();
 
-	foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $score)
+	foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $score)
 	{
  	   //$title = $movie["title"];
  	  //$year = $movie["year"];
