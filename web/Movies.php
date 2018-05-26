@@ -5,7 +5,6 @@ try
     $dbopts = parse_url($dbUrl);
     
     $dbHost = $dbopts["host"];
-    echo "$dbHost";
     $dbPort = $dbopts["port"];
     $dbUser = $dbopts["user"];
     $dbPassword = $dbopts["pass"];
@@ -26,16 +25,16 @@ catch (PDOException $ex)
 </head>
 <body>
     <h1>Movies</h1>
-<form action="" method="post">
-    <ul>
  
 <?php
 $user_rating = $_GET["rating"];
-$query = "SELECT m.title, m.year, r.code FROM movies m INNER JOIN ratings r ON m.rating_id = r.id WHERE r.code = :rating";
+//$query = "SELECT m.title, m.year, r.code FROM movies m INNER JOIN ratings r ON m.rating_id = r.id WHERE r.code = :rating";
+$query = "SELECT * FROM movies";
 $statement = $db->prepare($query);
-$statement->bindValue(":rating", $user_rating, PDO::PARAM_STR);
+//$statement->bindValue(":rating", $user_rating, PDO::PARAM_STR);
 $statement->execute();
-/*foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $movie)
+
+foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $movie)
 {
     $title = $movie["title"];
     $year = $movie["year"];
@@ -43,11 +42,9 @@ $statement->execute();
     
     echo "<li>$title ($year) - Rated $rating</li>";
 }
-*/
+
 
 
 ?>
-    </ul>
-</form>
 </body>
 </html>
