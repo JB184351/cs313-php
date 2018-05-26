@@ -5,6 +5,7 @@ try
     $dbopts = parse_url($dbUrl);
     
     $dbHost = $dbopts["host"];
+    echo "$dbHost";
     $dbPort = $dbopts["port"];
     $dbUser = $dbopts["user"];
     $dbPassword = $dbopts["pass"];
@@ -30,7 +31,6 @@ catch (PDOException $ex)
  
 <?php
 $user_rating = $_GET["rating"];
-echo "$user_rating";
 $query = "SELECT m.title, m.year, r.code FROM movies m INNER JOIN ratings r ON m.rating_id = r.id WHERE r.code = :rating";
 $statement = $db->prepare($query);
 $statement->bindValue(":rating", $user_rating, PDO::PARAM_STR);
