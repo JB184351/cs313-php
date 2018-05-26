@@ -32,19 +32,13 @@
 <body>
 	<h1>Bowling</h1>
 
-	
+<form action="results.php" method="get">
+
+<input type="text">
+<button type="submit"> Submit </button>
 
 
-
-	
-
-	<?php
-
-		
-
-
-	?>
-
+</form>
 
 
 </body>
