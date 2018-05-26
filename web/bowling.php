@@ -34,7 +34,7 @@
 
 <form action="results.php" method="get">
 
-<input type="text">
+<input name="person" type="text">
 <button type="submit"> Submit </button>
 
 
