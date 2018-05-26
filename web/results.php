@@ -9,7 +9,8 @@
 	$user_name = $_GET["person"];
 	echo "$user_name";
 
-$query = "SELECT * FROM score";
+$query = "SELECT score FROM score WHERE 
+person_id = (SELECT id FROM person WHERE name = '$user_name')";
 $statement = $db->prepare($query);
 $statement->bindValue(":rating", $user_name, PDO::PARAM_STR);
 $statement->execute();
