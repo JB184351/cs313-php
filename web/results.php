@@ -83,7 +83,7 @@ catch (PDOException $ex)
  	  //$year = $movie["year"];
  	  //$rating = $movie["code"];
 
-  	  $person = $score["person_id"];
+  	  $person = $score["person"];
    	  $score1 = $score["score"];
     
    	 echo "<li>$person - $score1</li>";
