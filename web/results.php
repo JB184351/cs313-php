@@ -16,6 +16,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="bowling.css">
 
 
 	<title>Results</title>
@@ -106,25 +107,5 @@ catch (PDOException $ex)
    	 echo "<li>$person - $score1</li>";
 	}
 ?>
-
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-
-    <!-- Logo -->
-   <div class="navbar-header">
-   <a href="#" class="navbar-brand">Justin Bengtson</a>
-   </div>
-
-   <!-- Menu Items -->
-   <div>
-   <ul class="nav navbar-nav">
-   <li class="active"><a href="#">Home</a></li>
-   <li><a href="#">About</a></li>
-   <li><a href="#">Contact</a></li>
-
-   <!-- drop down menu -->
-    <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Websites (Boostrap applied) <span class="caret"></span></a>
-    <ul class="dropdown-menu">
 </body>
 </html>
