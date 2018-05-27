@@ -20,6 +20,12 @@
 
 	<title>Results</title>
 
+
+
+
+</head>
+<body>
+
 	<nav class="navbar navbar-inverse">
     <div class="container-fluid">
 
@@ -39,11 +45,6 @@
     <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Websites (Boostrap applied) <span class="caret"></span></a>
     <ul class="dropdown-menu">
-
-	
-</head>
-<body>
-
 	
 	<h1> Results!</h1>
 <?php
