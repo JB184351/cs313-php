@@ -26,12 +26,7 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
-
-
-
 	$user_name = $_GET["person"];
-	echo "$user_name";
-	echo "\n";
 
 	//$query = "SELECT score.score FROM score INNER JOIN person
     //ON score.person_id = person.id WHERE person.name = :$user_name";
