@@ -23,7 +23,7 @@
 	
 </head>
 <body>
-	<h1>Bowling</h1>
+	<h1>Welcome to the Bowling Website!</h1>
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a href="#" class="navbar-brand">Justin Bengtson</a>
@@ -51,9 +51,11 @@
   </li>
 </ul>
 </div>
-</nav>
-<form action="results.php" method="get">
+</nav><br><br>
 
+<form  action="results.php" method="get">
+
+ Enter Name to check Bowling Score:
 <input name="person" type="text">
 <button type="submit"> Submit </button>
 
