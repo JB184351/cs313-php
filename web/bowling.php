@@ -44,9 +44,8 @@
           Assignments Coming Soon...
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="week03/week03.html">Week 3</a>
-          <a class="dropdown-item" href="week04/week04.html">Week 4</a>
-          <a class="dropdown-item" href="week05/week05.html">Week 5</a>
+          <a class="dropdown-item" href="personal.php">Personal Scores</a>
+          <a class="dropdown-item" href="team.php">Team Scores</a>
       </div>
   </li>
 </ul>
@@ -55,7 +54,7 @@
 
 <form  action="results.php" method="get">
 
- Enter Name to check Bowling Score:
+ Enter Name to check Bowling Score:<br>
 <input name="person" type="text">
 <button type="submit"> Submit </button>
 
