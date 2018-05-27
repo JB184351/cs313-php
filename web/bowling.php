@@ -47,6 +47,11 @@
           <a class="dropdown-item" href="week03/week03.html">Week 3</a>
           <a class="dropdown-item" href="week04/week04.html">Week 4</a>
           <a class="dropdown-item" href="week05/week05.html">Week 5</a>
+      </div>
+  </li>
+</ul>
+</div>
+</nav>
 <form action="results.php" method="get">
 
 <input name="person" type="text">
