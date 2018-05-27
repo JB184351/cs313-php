@@ -1,5 +1,5 @@
 <?php
-	try
+	/*try
 	{
 		$dbUrl = getenv('HEROKU_POSTGRESQL_BRONZE_URL');
 
@@ -21,8 +21,7 @@
 			echo 'Error' . $ex->getMessage();
   			die();
 		}
-
-
+		*/
 	?>
 
 <!DOCTYPE html>
