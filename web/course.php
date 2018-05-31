@@ -54,7 +54,7 @@ catch (PDOException $ex)
 
 	<?php 
 
-		foreach ($stmtfetchAll(PDO::FETCH_ASSOC) as $course) {
+		foreach ($stmt fetchAll(PDO::FETCH_ASSOC) as $course) {
 			$name = $course["name"];
 			$number = $course["number"];
 
