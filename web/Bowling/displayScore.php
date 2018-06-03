@@ -21,10 +21,16 @@ $statement = $db->prepare($query);
 $statement->bindValue(":personal_name", $personal_name, PDO::PARAM_INT);
 $statement->bindValue(":personal_score", $personal_score, PDO::PARAM_STR);
 $statement->execute();
-header("Scores: bowling.php?person_id=$personal_name");
+$personal_data = $statement->fetchAll(PDO::FETCH_ASSOC);
+//header("Scores: bowling.php?person_id=$personal_name");
 die();
 
-?>
+foreach ($personal_data as $personal_data) {
+	$personal_name = $personal_data["personal_name"];
+	$personal_score = $personal_data["personal_score"];
+	echo "$personal_name<br>";
+	echo "$personal_score<br>";
+}
 
 //require("dbConnect.php");
 
@@ -49,6 +55,7 @@ die();
 //echo "$personal_name";
 
 //unset($pdo);
+?>
 
 </body>
 </html>
