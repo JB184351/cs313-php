@@ -24,7 +24,7 @@
 	<h1>Welcome to the Bowling Scores Website!</h1>
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">Bowling Scores -></a>
+        <a href="#" class="navbar-brand">Bowling Scores</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,12 +48,12 @@
 
  Enter Name to check Bowling Score:<br>
 <input name="person" type="text">
-<button type="submit"> Submit </button><br>
+<button type="submit"> Submit </button><br><br>
 <input name="team" type="text">
-<button type="submit"> Submit</button><br>
+<button type="submit"> Submit</button><br><br>
 
 </form>
-
+<br>
 New User<br>
 Enter name and score here!<br>
 <form action="enterScore.php" method="post">
