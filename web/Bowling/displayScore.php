@@ -24,6 +24,8 @@ $statement->execute();
 header("Scores: bowling.php?person_id=$personal_name");
 die();
 
+?>
+
 //require("dbConnect.php");
 
 //try{
@@ -47,8 +49,6 @@ die();
 //echo "$personal_name";
 
 //unset($pdo);
-
-?>
 
 </body>
 </html>
