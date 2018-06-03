@@ -1,14 +1,14 @@
 <?php
 require("dbConnect.php");
-$courseId = htmlspecialchars($_GET["course_id"]);
 $db = get_db();
-$query = "SELECT name, number FROM course WHERE id=:id";
+if (!isset($db)) {
+	die("DB Connection was not set");
+}
+$query = "SELECT id, name, number FROM course";
 $statement = $db->prepare($query);
-$statement->bindValue(":id", $courseId, PDO::PARAM_INT);
+// Bind any variables I need, here...
 $statement->execute();
-$row = $statement->fetch();
-$number = $row["number"];
-$name = $row["name"];
+$courses = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,19 +16,20 @@ $name = $row["name"];
 	<title></title>
 </head>
 <body>
+	<h1>Courses</h1>
+
+	<ul>
 
 <?php
-	echo "<h1>Showing notes for: $number - $name</h1>";
+foreach ($courses as $course) {
+	$id = $course["id"];
+	$name = $course["name"];
+	$number = $course["number"];
+	echo "<li><a href='courseDetails.php?course_id=$id'>$number - $name</a></li>";
+}
 ?>
 
-<form action="insertNote.php" method="POST">
-<input type="hidden" name="course_id" value="<?php echo $courseId; ?>">
-<input type="date" name="date"><br>
-<textarea name="content" placeholder="Content"></textarea>
-
-<br><br>
-<input type="submit" value="Add Note">
-</form>
+	</ul>
 
 </body>
 </html>
