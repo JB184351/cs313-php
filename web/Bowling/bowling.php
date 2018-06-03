@@ -46,9 +46,12 @@
 
 <form  action="results.php" method="get">
 
- Enter Name to check Bowling Score:<br>
+ Enter Personal Name to check your Bowling Score:<br>
 <input name="person" type="text">
-<button type="submit"> Submit </button><br><br>
+<button type="submit"> Submit </button><br><br><br>
+
+
+Enter Team name to check team score:
 <input name="team" type="text">
 <button type="submit"> Submit</button><br><br>
 
@@ -56,7 +59,7 @@
 <br>
 New User<br>
 Enter name and score here!<br>
-<form action="enterScore.php" method="post">
+<form action="displayScore.php" method="post">
     <input name="personal_name" type="text">
 </form>
 

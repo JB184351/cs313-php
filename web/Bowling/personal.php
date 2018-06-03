@@ -7,5 +7,11 @@
 </head>
 <body>
 
+<?php
+
+	require("dbConnect.php");
+
+ ?>
+
 </body>
 </html>
