@@ -11,6 +11,11 @@ require("dbConnect.php");
 
 try{
 
+//$person = $score["person"];
+ //  	  $score1 = $score["score"];
+
+$personal_name = $_REQUEST["personal_name"];
+
 $sql = "INSERT INTO persons (personal_name) VALUES (:personal_name)";
 
 $stmt->bindParam(':personal_name', $_REQUEST['personal_name']);
@@ -21,6 +26,8 @@ echo "Inserted your score successfully!";
 catch(PDOExeption $e){
 	die("ERROR: Data was not able to execute $sql. " . $e->getMessage());
 }
+
+echo "$personal_name";
 
 unset($pdo);
 

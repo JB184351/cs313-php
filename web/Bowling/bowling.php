@@ -51,7 +51,7 @@
 <button type="submit"> Submit </button><br><br><br>
 
 
-Enter Team name to check team score:
+Enter Team name to check team score:<br>
 <input name="team" type="text">
 <button type="submit"> Submit</button><br><br>
 
@@ -60,7 +60,9 @@ Enter Team name to check team score:
 New User<br>
 Enter name and score here!<br>
 <form action="displayScore.php" method="post">
-    <input name="personal_name" type="text">
+    <input name="personal_name" type="text"><br>
+    <input name="personal_score" type="text"><br>
+    <button type="submit" > Submit</button>
 </form>
 
 
