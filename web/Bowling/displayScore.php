@@ -25,12 +25,13 @@ $personal_data = $statement->fetchAll(PDO::FETCH_ASSOC);
 header("Location: bowling.php?person_id=$personal_name");
 die();
 
-foreach ($personal_data as $personal_data) {
+/*foreach ($personal_data as $personal_data) {
 	$personal_name = $personal_data["personal_name"];
 	$personal_score = $personal_data["personal_score"];
 	echo "$personal_name<br>";
 	echo "$personal_score<br>";
 }
+*/
 
 //require("dbConnect.php");
 
