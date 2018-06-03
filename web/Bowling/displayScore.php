@@ -17,7 +17,7 @@ $db = get_db();
 
 $query = "INSERT INTO score (person_id, score) VALUES (':personal_name', 'personal_score')";
 
-echo "$query";
+echo "Hello";
 
 $statement = $db->prepare($query);
 $statement->bindValue(":personal_name", $personal_name, PDO::PARAM_INT);
