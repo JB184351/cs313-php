@@ -18,7 +18,7 @@ $statement->bindValue(":personal_name", $personal_name, PDO::PARAM_INT);
 $statement->bindValue(":personal_score", $personal_score, PDO::PARAM_STR);
 //$statement->bindValue(":date", $date, PDO::PARAM_STR);
 $statement->execute();
-header("Location: courseDetails.php?course_id=$courseId");
+//header("Location: courseDetails.php?course_id=$courseId");
 die();
 
 //require("dbConnect.php");
