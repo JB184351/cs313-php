@@ -12,7 +12,7 @@ $personal_score = htmlspecialchars($_POST["personal_score"]);
 
 require("dbConnect.php");
 $db = get_db();
-$query = "INSERT INTO note (course_id, content, date) VALUES (:courseId, :content, :date)";
+$query = "INSERT INTO person_team (personal_name, personal_score, date) VALUES (:personal_name, :personal_score, :date)";
 $statement = $db->prepare($query);
 $statement->bindValue(":personal_name", $personal_name, PDO::PARAM_INT);
 $statement->bindValue(":personal_score", $personal_score, PDO::PARAM_STR);
