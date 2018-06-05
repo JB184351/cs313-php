@@ -12,14 +12,22 @@ include("dbConnect.php");
 	<h1>Sign up Here!!!!</h1>
 </head>
 <body>
+<?php
 
+$user_name = $_POST["user"];
+$password = $_POST["password"];
+
+echo "$user_name<br>";
+echo "$password<br>";
+
+?>
 Sign Up Here!
-<form action="createUser" >
+<form action="createUser.php" method="post" >
 
 Username: <br>
-<input type="text"><br>
+<input name="user" type="text"><br>
 Password: <br>
-<input type="text"><br>
+<input name="password" type="text"><br>
 <button type="submit">Sign Up!<br>
 
  </form>
