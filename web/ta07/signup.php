@@ -16,8 +16,10 @@ include("dbConnect.php");
 Sign Up Here!
 <form action="createUser" >
 
-<input type="text">Username: <br>
-<input type="text">Password: <br>
+Username: <br>
+<input type="text"><br>
+Password: <br>
+<input type="text"><br>
 <button type="submit">Sign Up!<br>
 
  </form>
