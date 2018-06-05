@@ -17,8 +17,15 @@ include("dbConnect.php");
 $user_name = $_POST["user"];
 $password = $_POST["password"];
 
-echo "$user_name<br>";
-echo "$password<br>";
+$passwordHash = password_hash($password, PASSWORD_DEFAULT);
+
+if (password_verify($password, $passwordHash)) {
+    
+    echo "Correct Password";
+
+} else {
+    echo "Wrong Password";
+}
 
 ?>
 Sign Up Here!
