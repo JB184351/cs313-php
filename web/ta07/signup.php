@@ -22,7 +22,7 @@ echo "$password<br>";
 
 ?>
 Sign Up Here!
-<form action="createUser.php" method="post" >
+<form action="signup.php" method="post" >
 
 Username: <br>
 <input name="user" type="text"><br>
