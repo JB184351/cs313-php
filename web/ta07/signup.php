@@ -19,12 +19,12 @@ $password = $_POST["password"];
 
 $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
-if (password_verify($password, $passwordHash)) {
-    
-    echo "Correct Password";
+if(isset($user_name) and isset($password)){
+	$stmt = $db->prepare("INSERT INTO users (user_name, password) VALUES (:user_name, :password)");
 
-} else {
-    echo "Wrong Password";
+	$stmt->bindValue(':user_name', $user_name, PDO:PARAM_STR);
+	$stmt->bindValue(':password', $password, PDO:PARAM_STR);
+	$stmt->execute();
 }
 
 ?>
