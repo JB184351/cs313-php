@@ -22,16 +22,10 @@ $statement = $db->prepare($query);
 $statement->bindValue(":personal_name", $personal_name, PDO::PARAM_INT);
 $statement->bindValue(":personal_score", $personal_score, PDO::PARAM_STR);
 $statement->execute();
-
-
-foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $score)
-	{
-  	  $person = $score["personal_name"];
-   	  $score1 = $score["personal_score"];
     
-      echo "<li>$person - $score1</li>";
-	}
+echo "<li>$person - $score1</li>";
 	
+
 die();
 
 
