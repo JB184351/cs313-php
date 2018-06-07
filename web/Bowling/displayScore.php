@@ -15,14 +15,13 @@ $personal_data = $statement->fetchAll(PDO::FETCH_ASSOC);
 require("dbConnect.php");
 $db = get_db();
 
-$query = "INSERT INTO score (person_id, score) VALUES (':personal_name', ':personal_score')";
+$query = "INSERT INTO score (person_id, score) VALUES ((SELECT id FROM person WHERE name = ':personal_name'), :personal_score)";
 
 $statement = $db->prepare($query);
 $statement->bindValue(":personal_name", $personal_name, PDO::PARAM_INT);
 $statement->bindValue(":personal_score", $personal_score, PDO::PARAM_STR);
 $statement->execute();
 $personal_data = $statement->fetchAll(PDO::FETCH_ASSOC);
-header("Location: bowling.php?person_id=$personal_name");
 die();
 
 /*foreach ($personal_data as $personal_data) {

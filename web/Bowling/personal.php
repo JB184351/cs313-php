@@ -11,7 +11,7 @@
 
 	require("dbConnect.php");
 
- ?>
+  ?>
 
 </body>
 </html>
