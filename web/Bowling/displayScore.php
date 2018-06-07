@@ -23,8 +23,7 @@ $statement->bindValue(":personal_name", $personal_name, PDO::PARAM_INT);
 $statement->bindValue(":personal_score", $personal_score, PDO::PARAM_STR);
 $statement->execute();
 
-
-echo "<li>$personnal_name - $personal_score</li>";
+echo "<li>$personal_name - $personal_score</li>";
 
 die();
 
