@@ -13,17 +13,17 @@ $personal_score = htmlspecialchars($_POST["personal_score"]);
 //$personal_data = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 //require("bowling.php");
-require("dbConnect.php");
-$db = get_db();
+//require("dbConnect.php");
+//$db = get_db();
 
-$query = "INSERT INTO score (person_id, score) VALUES (':personal_name', :personal_score)";
+//$query = "INSERT INTO score (person_id, score) VALUES (':personal_name', :personal_score)";
 
-$statement = $db->prepare($query);
-$statement->bindValue(":personal_name", $personal_name, PDO::PARAM_INT);
-$statement->bindValue(":personal_score", $personal_score, PDO::PARAM_STR);
-$statement->execute();
+//$statement = $db->prepare($query);
+//$statement->bindValue(":personal_name", $personal_name, PDO::PARAM_INT);
+//$statement->bindValue(":personal_score", $personal_score, PDO::PARAM_STR);
+//$statement->execute();
     
-echo "<li>$person - $score1</li>";
+echo "<li>$personal_name - $personal_score</li>";
 	
 
 die();
