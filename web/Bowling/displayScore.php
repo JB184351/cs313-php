@@ -12,6 +12,7 @@ $personal_score = htmlspecialchars($_POST["personal_score"]);
 
 $personal_data = $statement->fetchAll(PDO::FETCH_ASSOC);
 
+require("bowling.php");
 require("dbConnect.php");
 $db = get_db();
 
