@@ -1,6 +1,7 @@
 body{
 	
     background-image: url("BowlingImage.jpg");
-    background-blend-mode: screen;
+    width: 1920px;
+    height: 1080px;
 }
 
