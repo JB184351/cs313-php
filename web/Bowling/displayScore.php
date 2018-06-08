@@ -10,9 +10,9 @@
 $personal_name = htmlspecialchars($_POST["personal_name"]);
 $personal_score = htmlspecialchars($_POST["personal_score"]);
 
-$statement->fetchAll(PDO::FETCH_ASSOC);
+//$statement->fetchAll(PDO::FETCH_ASSOC);
 
-require("bowling.php");
+//require("bowling.php");
 require("dbConnect.php");
 $db = get_db();
 
