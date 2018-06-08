@@ -22,8 +22,6 @@ $statement->execute();
 echo "$statement";
 
 echo "<li>$personnal_name - $personal_score</li>";
-
-die();
 ?>
 
 </body>
