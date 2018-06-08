@@ -10,8 +10,17 @@
 $personal_name = htmlspecialchars($_POST["personal_name"]);
 $personal_score = htmlspecialchars($_POST["personal_score"]);
 
+
 require("dbConnect.php");
-$db = get_db();
+
+if(isset($db))
+{
+	echo "Database is set";
+}
+
+else{
+	echo "Database is not set";
+}
 
 $query = "INSERT INTO person (name) VALUES (:personal_name)";
 
