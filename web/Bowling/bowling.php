@@ -52,7 +52,7 @@
 
 
 Enter Team name to check team score:<br>
-<input name="team" type="text">
+<input id="textcolor" name="team" type="text">
 <button type="submit"> Submit</button><br><br>
 
 </form>
@@ -60,9 +60,9 @@ Enter Team name to check team score:<br>
 New User<br>
 <form action="createUser.php" method="post">
     Enter name:<br>
-    <input name="personal_name" type="text"><br>
+    <input id="textcolor" name="personal_name" type="text"><br>
     Enter score:<br>
-    <input name="personal_score" type="text"><br>
+    <input id="textcolor" name="personal_score" type="text"><br>
     <button type="submit" > Submit</button>
 </form>
 
