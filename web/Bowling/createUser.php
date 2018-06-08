@@ -13,7 +13,7 @@ $personal_score = htmlspecialchars($_POST["personal_score"]);
 require("dbConnect.php");
 $db = get_db();
 
-$query = "INSERT INTO score (person_id, score) VALUES ((SELECT id FROM person WHERE name = :personal_name), :personal_score)";
+$query = "INSERT INTO score (person_id, score) VALUES (SELECT id FROM person WHERE name = :personal_name, :personal_score)";
 
 $statement = $db->prepare($query);
 $statement->bindValue(":personal_name", $personal_name, PDO::PARAM_INT);
