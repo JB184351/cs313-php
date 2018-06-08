@@ -9,7 +9,8 @@
 
 $personal_name = htmlspecialchars($_POST["personal_name"]);
 $personal_score = htmlspecialchars($_POST["personal_score"]);
-
+echo "$personal_name";
+echo "$personal_score";
 
 require("dbConnect.php");
 
