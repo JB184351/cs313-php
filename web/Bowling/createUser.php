@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+$favoritecolor = $_SESSION['favcolor'];
+
+
+echo "$favoritecolor";
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +17,7 @@
 <body>
 
 <?php
+
 
 $personal_name = htmlspecialchars($_POST["personal_name"]);
 $personal_score = htmlspecialchars($_POST["personal_score"]);

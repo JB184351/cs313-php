@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+
+$_SESSION['favcolor'] = "red";
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
