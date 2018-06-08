@@ -42,12 +42,8 @@
   
   $FirstName = htmlspecialchars($_POST["firstname"]);
   $LastName =  htmlspecialchars($_POST["lastname"]);
-
   $Email = htmlspecialchars($_POST["Email"]);
-
   $Major = htmlspecialchars($_POST["Major"]);
-
-
   $Comments = htmlspecialchars($_POST["Comments"]);
   $Continent = htmlspecialchars($_POST['continent']);
 
