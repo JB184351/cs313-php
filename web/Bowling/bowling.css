@@ -3,8 +3,5 @@ body{
     background-image: url("BowlingImage.jpg");
     background-repeat:no-repeat;
     background-size:cover;
-}
-
-input{
-	color: white;
+    text-decoration-color: white;
 }
