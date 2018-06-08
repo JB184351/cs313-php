@@ -58,7 +58,7 @@ Enter Team name to check team score:<br>
 </form>
 <br>
 New User<br>
-<form action="displayScore.php" method="post">
+<form action="createUser.php" method="post">
     Enter name:<br>
     <input name="personal_name" type="text"><br>
     Enter score:<br>
