@@ -46,23 +46,23 @@
 
 <form  action="results.php" method="get">
 
- Enter Personal Name to check your Bowling Score:<br>
+ <div id="textcolor">Enter Personal Name to check your Bowling Score:<br>
 <input name="person" type="text">
 <button type="submit"> Submit </button><br><br><br>
 
 
-Enter Team name to check team score:<br>
+<div id="textcolor">Enter Team name to check team score:<br>
 <input id="textcolor" name="team" type="text">
 <button type="submit"> Submit</button><br><br>
 
 </form>
 <br>
-New User<br>
+<div id="textcolor">New User<br>
 <form action="createUser.php" method="post">
-    Enter name:<br>
-    <input id="textcolor" name="personal_name" type="text"><br>
-    Enter score:<br>
-    <input id="textcolor" name="personal_score" type="text"><br>
+    <div id="textcolor">Enter name:<br>
+    <input name="personal_name" type="text"><br>
+    <div id="textcolor">Enter score:<br>
+    <input name="personal_score" type="text"><br>
     <button type="submit" > Submit</button>
 </form>
 

@@ -3,5 +3,8 @@ body{
     background-image: url("BowlingImage.jpg");
     background-repeat:no-repeat;
     background-size:cover;
-    text-decoration-color: white;
+}
+
+#texcolor{
+	color: white;
 }
