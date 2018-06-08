@@ -9,8 +9,6 @@
 
 $personal_name = htmlspecialchars($_POST["personal_name"]);
 $personal_score = htmlspecialchars($_POST["personal_score"]);
-echo "$personal_name";
-echo "$personal_score";
 
 require("dbConnect.php");
 
@@ -42,7 +40,7 @@ $statement->execute();
 
 echo "$statement";
 
-echo "<li>$personnal_name - $personal_score</li>";
+echo "$personal_name - $personal_score";
 ?>
 
 </body>
