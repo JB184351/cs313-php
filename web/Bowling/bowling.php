@@ -46,22 +46,22 @@
 
 <form  action="results.php" method="get">
 
- <div style="color:white">Enter Personal Name to check your Bowling Score:<br>
+ <div style="color:white; border:1px solid black;">Enter Personal Name to check your Bowling Score:<br>
 <input name="person" type="text">
 <button type="submit"> Submit </button><br><br><br>
 
 
-<div style="color:white">Enter Team name to check team score:<br>
+<div style="color:white; border:1px solid black;" >Enter Team name to check team score:<br>
 <input id="textcolor" name="team" type="text">
 <button type="submit"> Submit</button><br><br>
 
 </form>
 <br>
-<div style="color:white">New User<br>
+<div style="color:white, border:1px solid black;">New User<br>
 <form action="createUser.php" method="post">
-    <div style="color:white">Enter name:<br>
+    <div style="color:white border:1px solid black;">Enter name:<br>
     <input name="personal_name" type="text"><br>
-    <div style="color:white">Enter score:<br>
+    <div style="color:white border:1px solid black;">Enter score:<br>
     <input name="personal_score" type="text"><br>
     <button type="submit" > Submit</button>
 </form>
