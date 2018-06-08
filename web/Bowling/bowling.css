@@ -1,7 +1,7 @@
 body{
 	
     background-image: url("BowlingImage.jpg");
-    width: 1920px;
-    height: 1080px;
+    background-repeat:no-repeat;
+    background-size:cover;	
 }
 
