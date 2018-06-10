@@ -4,7 +4,7 @@ session_start();
 $favoritecolor = $_SESSION['favcolor'];
 
 
-echo "$favoritecolor";
+//echo "$favoritecolor";
 
 ?>
 

@@ -2,7 +2,7 @@
 
 session_start();
 
-$_SESSION['favcolor'] = "red";
+//$_SESSION['favcolor'] = "red";
 
 ?>
 
