@@ -54,7 +54,7 @@
   	  $person = $score["person"];
    	  $score1 = $score["score"];
     
-   	 echo "<li>style='white;'>" . $person . "-" . $score1 . "</li>";
+   	 echo "<li style='white;'>" . $person . "-" . $score1 . "</li>";
 	}
 ?>
 </body>
