@@ -10,13 +10,13 @@
 <?php
 
 	require("dbConnect.php");
-
+	echo "I hate it!";
 	$query = "SELECT score.score, person.name FROM score INNER JOIN person ON score.person_id = person.id";
 
     $stmt = $db->prepare($query);
     
    
-   // $stmt->bindValue('name', $query, PDO::PARAM_STR);
+    $stmt->bindValue('name', $query, PDO::PARAM_STR);
 
     try {
         $stmt->execute();
@@ -27,12 +27,10 @@
 
 	foreach ($stmt->fetchAll(PDO::FETCH_ASSOC) as $score)
 	{
-  	 // $person = $score["person"];
-   	 // $score1 = $score["score"];
+  	  $person = $score["person"];
+   	  $score1 = $score["score"];
     
-   	 //echo "<li style='color:white;'>" . $person . " - " . $score1 . "</li>";
-
-		echo "$stmt";
+   	 echo "<li style='color:white;'>" . $person . " - " . $score1 . "</li>";
 	}
 
   ?>
