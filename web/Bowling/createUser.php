@@ -15,6 +15,7 @@ $favoritecolor = $_SESSION['favcolor'];
 <html>
 <head>
 	<title>Here are your scores!</title>
+	<h1> New User Successfully created!!!</h1>
 </head>
 <body>
 
