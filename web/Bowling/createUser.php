@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="bowling.css">
+
 <?php
 
 session_start();
@@ -39,6 +41,8 @@ $statement->execute();
 
 
 echo "$personal_name - $personal_score";
+
+ echo "<li style='color:white;'>" . $personal_name . " - " . $personal_score . "</li>";
 ?>
 
 </body>
