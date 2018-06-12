@@ -4,14 +4,13 @@
 	<title>Personal Score's Page</title>
 	<h1 id="textcolor">Personal Score's Page</h1>
 	<link rel="stylesheet" type="text/css" href="bowling.css">
-	<a href="https://young-tundra-19515.herokuapp.com/Bowling/bowling.php">Bowling Main</a>
+	<a href="https://young-tundra-19515.herokuapp.com/Bowling/bowling.php" style="color:white;">Bowling Main</a>
 </head>
 <body>
 
 <?php
 
 	require("dbConnect.php");
-	echo "I hate it!";
 	$query = "SELECT score.score, person.name FROM score INNER JOIN person ON score.person_id = person.id";
 
     $stmt = $db->prepare($query);
