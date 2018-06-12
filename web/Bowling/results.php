@@ -22,9 +22,9 @@
 
 </head>
 <body>
-	
+	<a href="https://young-tundra-19515.herokuapp.com/Bowling/bowling.php" style="color:white;">Bowling Main</a>
 	<h1> Results!</h1>
-    <a href="https://young-tundra-19515.herokuapp.com/Bowling/bowling.php" style="color:white;">Bowling Main</a>
+    
 <?php
 	require("dbConnect.php");
 
