@@ -4,6 +4,7 @@
 	<title>Personal Score's Page</title>
 	<h1 id="textcolor">Personal Score's Page</h1>
 	<link rel="stylesheet" type="text/css" href="bowling.css">
+	<a href="https://young-tundra-19515.herokuapp.com/Bowling/bowling.php">Bowling Main</a>
 </head>
 <body>
 
